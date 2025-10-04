@@ -1,5 +1,5 @@
 # Usa la imagen base de .NET para la ejecución
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /workspace
 EXPOSE 8080
 
