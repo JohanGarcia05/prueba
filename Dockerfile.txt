@@ -1,0 +1,14 @@
+# Usa la imagen base de .NET para la ejecución
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /workspace
+EXPOSE 8080
+
+# Imagen final con la aplicación publicada
+FROM base AS final
+WORKDIR /workspace
+
+# Copia todos los archivos desde la raíz del repositorio de GitHub
+COPY . .
+
+# Comando para ejecutar la aplicación Blazor Server
+ENTRYPOINT ["dotnet", "OfApp.dll"]
