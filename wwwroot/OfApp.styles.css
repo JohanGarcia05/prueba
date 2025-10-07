@@ -203,3 +203,73 @@ main[b-mfs25x4osp] {
         overflow-y: auto;
     }
 }
+/* _content/OfApp/Components/Pages/Home.razor.rz.scp.css */
+/* --- Responsividad para pantallas pequeñas --- */
+@media (max-width: 768px) {
+
+    /* Carrusel más pequeño */
+    .fotocover[b-29t4e09djs] {
+        height: 200px;
+    }
+
+    /* Perfil en columna */
+    .perfil-container[b-29t4e09djs] {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .perfil-container .mud-avatar[b-29t4e09djs] {
+            margin-right: 0 !important;
+            margin-bottom: 10px;
+        }
+
+    /* Inputs a ancho completo */
+    .suscripcion-input-row[b-29t4e09djs] {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .suscripcion-card[b-29t4e09djs] {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .center-container[b-29t4e09djs] {
+        padding-top: 20px;
+    }
+
+    .cardfoto[b-29t4e09djs] {
+        width: 60px;
+        height: 30px;
+    }
+
+    .vercotenido[b-29t4e09djs] {
+    width:200px;
+    color:black;
+    }
+}
+
+/* --- Extra small (celulares muy pequeños) --- */
+@media (max-width: 480px) {
+    .vercotenido[b-29t4e09djs] {
+        width: 200px;
+        color: black;
+    }
+
+    .suscripcion-card[b-29t4e09djs] {
+        padding: 10px;
+    }
+
+    .fotocover[b-29t4e09djs] {
+        height: 180px;
+    }
+
+    .foto[b-29t4e09djs] {
+        width: 70px;
+        height: 70px;
+    }
+
+    .perfil-container[b-29t4e09djs] {
+        gap: 10px;
+    }
+}
